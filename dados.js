@@ -219,12 +219,12 @@ const fotosArquivo = [
     { 
         id: 10, 
         tipo: "foto", 
-        src: "biblioteca/AR_3.JPEG", 
+        src: "biblioteca/AR_3.jpg", 
     },
     { 
         id:11, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_4.mp4", 
+        src: "biblioteca/VID_AR_4.MP4", 
     },
     { 
         id: 12, 
