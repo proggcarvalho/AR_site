@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
             // Mostra a vista correspondente
             const targetId = e.target.getAttribute('data-target');
             document.getElementById(targetId).classList.remove('hidden');
+
+            // A MAGIA ACONTECE AQUI: Manda a página diretamente para o topo (pixel 0)
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 
