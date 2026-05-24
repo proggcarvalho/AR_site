@@ -174,81 +174,97 @@ const fotosArquivo = [
     { 
         id: 1, 
         tipo: "foto", 
-        src: "biblioteca/AR_1.JPEG", 
+        src: "biblioteca/AR_1.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 2, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_3.mp4", 
+        src: "biblioteca/VID_AR_3.mp4",
+        alt: "O nosso vídeo" 
     },
     { 
         id: 3, 
         tipo: "foto", 
-        src: "biblioteca/AR_2.png", 
+        src: "biblioteca/AR_2.png",
+        alt: "A nossa foto" 
     },
     { 
         id: 4, 
         tipo: "foto", 
-        src: "biblioteca/AR_4.jpg", 
+        src: "biblioteca/AR_4.jpg",
+        alt: "A nossa foto" 
     },
     { 
         id: 5, 
         tipo: "foto", 
-        src: "biblioteca/AR_5.jpg", 
+        src: "biblioteca/AR_5.jpg",
+        alt: "A nossa foto" 
     },
     { 
         id: 6, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_2.mp4", 
+        src: "biblioteca/VID_AR_2.mp4",
+        alt: "O nosso vídeo" 
     },
     { 
         id: 7, 
         tipo: "foto", 
-        src: "biblioteca/AR_8.JPEG", 
+        src: "biblioteca/AR_8.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 8, 
         tipo: "foto", 
-        src: "biblioteca/AR_7.JPEG", 
+        src: "biblioteca/AR_7.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 9, 
         tipo: "foto", 
-        src: "biblioteca/AR_6.JPEG", 
+        src: "biblioteca/AR_6.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 10, 
         tipo: "foto", 
-        src: "biblioteca/AR_3.jpg", 
+        src: "biblioteca/AR_3.jpg",
+        alt: "A nossa foto" 
     },
     { 
         id:11, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_4.MP4", 
+        src: "biblioteca/VID_AR_4.MP4",
+        alt: "O nosso vídeo"
     },
     { 
         id: 12, 
         tipo: "foto", 
-        src: "biblioteca/AR_9.JPEG", 
+        src: "biblioteca/AR_9.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 13, 
         tipo: "foto", 
-        src: "biblioteca/AR_11.JPEG", 
+        src: "biblioteca/AR_11.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 14, 
         tipo: "foto", 
-        src: "biblioteca/AR_12.JPEG", 
+        src: "biblioteca/AR_12.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 15, 
         tipo: "foto", 
-        src: "biblioteca/AR_10.JPEG", 
+        src: "biblioteca/AR_10.JPEG",
+        alt: "A nossa foto" 
     },
     { 
         id: 16, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_1.mp4", 
+        src: "biblioteca/VID_AR_1.mp4",
+        alt: "O nosso vídeo" 
     },
 ];
