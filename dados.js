@@ -180,7 +180,7 @@ const fotosArquivo = [
     { 
         id: 1, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_1.MOV", 
+        src: "biblioteca/VID_AR_1.mp4", 
         alt: "Aquele vídeo engraçado" 
     },
     { 
@@ -228,19 +228,19 @@ const fotosArquivo = [
     { 
         id: 2, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_2.MOV", 
+        src: "biblioteca/VID_AR_2.mp4", 
         alt: "Aquele vídeo engraçado" 
     },
     { 
         id: 3, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_3.MOV", 
+        src: "biblioteca/VID_AR_3.mp4", 
         alt: "Aquele vídeo engraçado" 
     },
     { 
         id: 4, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_4.MP4", 
+        src: "biblioteca/VID_AR_4.mp4", 
         alt: "Aquele vídeo engraçado" 
     },
 ];
