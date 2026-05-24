@@ -175,72 +175,80 @@ const fotosArquivo = [
         id: 1, 
         tipo: "foto", 
         src: "biblioteca/AR_1.JPEG", 
-        alt: "Praia" 
     },
     { 
-        id: 1, 
+        id: 2, 
         tipo: "video", 
-        src: "biblioteca/VID_AR_1.mp4", 
-        alt: "Aquele vídeo engraçado" 
+        src: "biblioteca/VID_AR_3.mp4", 
     },
     { 
         id: 3, 
         tipo: "foto", 
         src: "biblioteca/AR_2.png", 
-        alt: "Praia" 
     },
     { 
         id: 4, 
         tipo: "foto", 
-        src: "biblioteca/AR_3.jpg", 
-        alt: "Praia" 
+        src: "biblioteca/AR_4.jpg", 
     },
     { 
         id: 5, 
         tipo: "foto", 
-        src: "biblioteca/AR_4.jpg", 
-        alt: "Praia" 
+        src: "biblioteca/AR_5.jpg", 
     },
     { 
         id: 6, 
-        tipo: "foto", 
-        src: "biblioteca/AR_5.jpg", 
-        alt: "Praia" 
+        tipo: "video", 
+        src: "biblioteca/VID_AR_2.mp4", 
     },
     { 
         id: 7, 
         tipo: "foto", 
-        src: "biblioteca/AR_6.JPEG", 
-        alt: "Praia" 
+        src: "biblioteca/AR_8.JPEG", 
     },
     { 
         id: 8, 
         tipo: "foto", 
         src: "biblioteca/AR_7.JPEG", 
-        alt: "Praia" 
     },
     { 
         id: 9, 
         tipo: "foto", 
-        src: "biblioteca/AR_8.JPEG", 
-        alt: "Praia" 
+        src: "biblioteca/AR_6.JPEG", 
     },
     { 
-        id: 2, 
-        tipo: "video", 
-        src: "biblioteca/VID_AR_2.mp4", 
-        alt: "Aquele vídeo engraçado" 
+        id: 10, 
+        tipo: "foto", 
+        src: "biblioteca/AR_3.JPEG", 
     },
     { 
-        id: 3, 
-        tipo: "video", 
-        src: "biblioteca/VID_AR_3.mp4", 
-        alt: "Aquele vídeo engraçado" 
-    },
-    { 
-        id: 4, 
+        id:11, 
         tipo: "video", 
         src: "biblioteca/VID_AR_4.mp4", 
-        alt: "Aquele vídeo engraçado!!" 
+    },
+    { 
+        id: 12, 
+        tipo: "foto", 
+        src: "biblioteca/AR_9.JPEG", 
+    },
+    { 
+        id: 13, 
+        tipo: "foto", 
+        src: "biblioteca/AR_11.JPEG", 
+    },
+    { 
+        id: 14, 
+        tipo: "foto", 
+        src: "biblioteca/AR_12.JPEG", 
+    },
+    { 
+        id: 15, 
+        tipo: "foto", 
+        src: "biblioteca/AR_10.JPEG", 
+    },
+    { 
+        id: 16, 
+        tipo: "video", 
+        src: "biblioteca/VID_AR_1.mp4", 
     },
 ];
