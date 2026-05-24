@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR</title>
+    <link rel="icon" type="image/png" href="biblioteca/AR_log1.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kalam:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <div class="polaroid">
+            <img src="biblioteca/AR_1.JPEG" alt="Uma memória nossa" class="foto">
+            <div class="caption">
+                <p id="saudacao">Olá, my love!!</p>
+            </div>
+        </div>
+
+        <button id="btn-entrar" class="btn">
+            Abrir Diário
+        </button>
+    </main>
+
+    <section id="timeline-view" class="hidden">
+        <h2 class="timeline-title">A Nossa História</h2>
+        <div id="timeline-container"></div>
+    </section>
+
+    <section id="mural-view" class="hidden">
+        <h2 class="timeline-title">O Nosso Mural</h2>
+        <div id="mural-container">
+            </div>
+    </section>
+
+    <section id="musica-view" class="hidden">
+        <h2 class="timeline-title">As Nossas Músicas</h2>
+        <div id="musica-container">
+            </div>
+    </section>
+
+    <section id="arquivo-view" class="hidden">
+        <h2 class="timeline-title">O Nosso Arquivo</h2>
+        <div id="arquivo-container">
+            </div>
+    </section>
+
+    <nav id="bottom-nav" class="hidden">
+        <button class="nav-btn active" data-target="timeline-view">Timeline</button>
+        <button class="nav-btn" data-target="mural-view">Mural</button>
+        <button class="nav-btn" data-target="musica-view">Música</button>
+        <button class="nav-btn" data-target="arquivo-view">Arquivo</button>
+    </nav>
+
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,298 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F5F0; 
+    font-family: 'Inter', sans-serif;
+    /* Apagámos o overflow: hidden e o display flex que estavam aqui a bloquear tudo */
+    overflow-x: hidden; /* Garante apenas que o site não abana para os lados */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Movemos o centramento para aqui */
+    min-height: 100vh; /* Garante que a polaroid fica no meio do ecrã */
+    gap: 40px;
+}
+
+/* O Cartão Polaroid */
+.polaroid {
+    background: #ffffff;
+    padding: 15px 15px 20px 15px; /* Mais espaço em baixo para o texto */
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08); /* Sombra suave */
+    transform: rotate(-3deg); /* O truque para parecer pousada na mesa */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 280px;
+}
+
+/* Interação ao passar o rato (para PC) */
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.foto {
+    width: 100%;
+    height: 320px;
+    object-fit: cover; /* Garante que a foto não fica distorcida */
+    border-radius: 2px;
+    filter: contrast(1.05) brightness(0.95); /* Dá um ligeiro tom de foto real */
+}
+
+.caption {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#saudacao {
+    font-family: 'Kalam', cursive; /* Fonte estilo caligrafia */
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+/* O Botão Minimalista */
+.btn {
+    padding: 12px 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Efeito de saída (quando clicarem no botão) */
+.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.6s ease;
+}
+
+/* Classe utilitária para esconder elementos */
+.hidden {
+    display: none !important;
+}
+
+/* Estilos da Timeline */
+#timeline-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 600px; /* Mantém tudo centrado e legível */
+    margin: 0 auto;
+}
+
+.timeline-title {
+    font-family: 'Kalam', cursive;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+#timeline-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaço entre cada memória */
+}
+
+/* O design de cada memória */
+.memoria-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border-left: 4px solid #333333; /* Uma linha lateral para dar estilo de timeline */
+}
+
+.memoria-data {
+    font-size: 0.85rem;
+    color: #888888;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.memoria-titulo {
+    font-size: 1.25rem;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.memoria-desc {
+    color: #555555;
+    line-height: 1.6;
+}
+
+.memoria-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 15px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+/* --- Barra de Navegação --- */
+#bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #888888;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-btn.active {
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Espaço extra no fundo para a barra não tapar conteúdo */
+#timeline-view, 
+
+/* --- O Mural --- */
+
+#mural-view {
+    padding-bottom: 90px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra o título e o quadro */
+}
+
+#mural-container {
+    width: 100%;
+    max-width: 800px; /* Impede que fiquem gigantes no ecrã do PC */
+    display: grid;
+    /* Cria colunas automáticas com um tamanho mínimo de 220px */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px; /* Espaço entre os post-its */
+    padding: 0 20px;
+}
+
+.post-it {
+    padding: 30px 20px;
+    /* Cantos ligeiramente diferentes para simular papel real e não uma caixa perfeita */
+    border-radius: 2px 15px 2px 15px; 
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    color: #333333;
+    box-shadow: 3px 6px 15px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 220px; /* Garante que ficam quadrados/retangulares em vez de tiras finas */
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* O truque mágico: fazer com que fiquem colados um bocado tortos */
+.post-it:nth-child(odd) {
+    transform: rotate(-3deg);
+}
+
+.post-it:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.post-it:nth-child(3n) {
+    transform: rotate(4deg);
+}
+
+/* Interação ao passar o rato (Levanta o papel) */
+.post-it:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 5px 12px 25px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+/* --- A Música --- */
+#musica-view {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#musica-container {
+    width: 100%;
+    max-width: 900px; /* Alargamos o espaço para caberem 2 lado a lado no PC */
+    display: grid;
+    /* Cria uma grelha automática: cada música ocupa no mínimo 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Espaço entre os blocos de música */
+    padding: 0 20px;
+}
+
+.musica-titulo {
+    font-family: 'Kalam', cursive; /* Troca para a letra de "diário" */
+    font-size: 1.4rem; /* Aumentamos um bocadinho o tamanho */
+    color: #444444; /* Um cinza escuro mais suave que o preto total */
+    margin-bottom: 12px;
+    text-align: center; /* Centra o título por cima do player */
+}
+
+/* --- O Arquivo (Galeria) --- */
+#arquivo-view {
+    padding-top: 40px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#arquivo-container {
+    display: grid;
+    /* Reduzimos o tamanho mínimo ligeiramente para dar espaço para 6 */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0 20px;
+    width: 100%;
+    /* A magia acontece aqui: alargamos o ecrã para caberem as 6 colunas no PC */
+    max-width: 1100px; 
+}
+
+.foto-arquivo {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Magia: força a serem quadrados perfeitos gigantes! */
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.foto-arquivo:hover {
+    transform: scale(1.03); /* Efeito fixe quando passas o rato/dedo */
+}
