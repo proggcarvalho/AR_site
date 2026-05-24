@@ -241,6 +241,6 @@ const fotosArquivo = [
         id: 4, 
         tipo: "video", 
         src: "biblioteca/VID_AR_4.mp4", 
-        alt: "Aquele vídeo engraçado" 
+        alt: "Aquele vídeo engraçado!" 
     },
 ];
