@@ -166,6 +166,16 @@ const nossasMusicas = [
         id: 4,
         titulo: "Aquela carroça que nós sabemos",
         iframe: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7AwVSKaQxpidrtYBerkHKk?utm_source=generator" width="100%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+    },
+    {
+        id: 5,
+        titulo: "Um bocado girly mas bom",
+        iframe: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0H6I8UNnvIOxQTSd5x2ANU?utm_source=generator&si=700309ea945a4f81" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+    },
+    {
+        id: 6,
+        titulo: "Anocas viciou bastante",
+        iframe: '<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6B6GtDYoJC5HKjwdTCUlur?utm_source=generator&si=1e794a7015c44d69" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
     }
 ];
 
@@ -266,5 +276,53 @@ const fotosArquivo = [
         tipo: "video", 
         src: "biblioteca/VID_AR_1.mp4",
         alt: "O nosso vídeo" 
+    },
+    { 
+        id: 17, 
+        tipo: "foto", 
+        src: "biblioteca/AR_13.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 18, 
+        tipo: "foto", 
+        src: "biblioteca/AR_14.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 19, 
+        tipo: "foto", 
+        src: "biblioteca/AR_15.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 20, 
+        tipo: "foto", 
+        src: "biblioteca/AR_16.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 21, 
+        tipo: "foto", 
+        src: "biblioteca/AR_17.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 22, 
+        tipo: "foto", 
+        src: "biblioteca/AR_18.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 23, 
+        tipo: "foto", 
+        src: "biblioteca/AR_19.jpg",
+        alt: "A nossa foto" 
+    },
+    { 
+        id: 24, 
+        tipo: "foto", 
+        src: "biblioteca/AR_20.jpg",
+        alt: "A nossa foto" 
     },
 ];
